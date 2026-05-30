@@ -10,6 +10,7 @@ public class LoginPage {
     By usernameField = By.id("user-name");
     By passwordField = By.id("password");
     By loginButton = By.id("login-button");
+    By errorMessage = By.cssSelector("h3[data-test='error']");
 
     //Constructor in POM mainly used to pass driver from test class into page class
 
@@ -21,5 +22,8 @@ public class LoginPage {
         driver.findElement(usernameField).sendKeys(username);
         driver.findElement(passwordField).sendKeys(password);
         driver.findElement(loginButton).click();
+    }
+    public String getErrorMessage(){
+       return driver.findElement(errorMessage).getText();
     }
 }
