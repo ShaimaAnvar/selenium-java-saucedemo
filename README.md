@@ -1,6 +1,6 @@
 # Selenium Java SauceDemo Automation
 
-Small Selenium automation framework built using Java, Selenium WebDriver, TestNG, Maven and GitHub.
+Built a Selenium WebDriver automation framework using Java, TestNG, Maven, and Page Object Model (POM). Automated positive and negative login scenarios, add-to-cart, checkout, and logout workflows. Implemented explicit waits for dynamic web elements.
 
 ## Framework Design
 
@@ -22,9 +22,11 @@ Small Selenium automation framework built using Java, Selenium WebDriver, TestNG
 
 - Browser Launch
 - Valid Login
+- Invalid Login
 - Add Product To Cart
 - Checkout Flow
 - Logout Functionality
+
 
 ## Tech Stack
 
@@ -50,6 +52,7 @@ src/test/java
   - AddToCartTest
   - CheckoutTest
   - LogoutTest
+  - InvalidLoginTest
  
 ## How to Run
 
