@@ -1,28 +1,62 @@
 # Selenium Java SauceDemo Automation
 
-Small Selenium automation project for practicing:
+Small Selenium automation framework built using Java, Selenium WebDriver, TestNG, Maven and GitHub.
 
-- Selenium WebDriver
-- Java
-- TestNG
-- Maven
-- GitHub
+## Framework Design
+
+- Page Object Model (POM)
+- Maven Project Structure
+- TestNG Test Framework
+- Git Version Control
+
+## Features
+
+- Automated login functionality
+- Automated add-to-cart functionality
+- Automated checkout workflow
+- Automated logout functionality
+- Explicit wait implementation for dynamic elements
+- Page Object Model (POM) design
 
 ## Automated Scenarios
 
-- Browser launch
-- Login functionality
-- Add to cart
-- Checkout flow
-- Logout functionality
+- Browser Launch
+- Valid Login
+- Add Product To Cart
+- Checkout Flow
+- Logout Functionality
 
-## Tools Used
+## Tech Stack
 
 - Java
-- Selenium
+- Selenium WebDriver
 - TestNG
 - Maven
 - IntelliJ IDEA
+- GitHub
+
+## Project Structure
+
+src/main/java
+- pages
+  - LoginPage
+  - ProductsPage
+  - CartPage
+  - CheckoutPage
+
+src/test/java
+- tests
+  - LoginTest
+  - AddToCartTest
+  - CheckoutTest
+  - LogoutTest
+ 
+## How to Run
+
+1. Clone the repository
+2. Open the project in IntelliJ IDEA
+3. Maven will download dependencies from pom.xml
+4. Run any TestNG test class from src/test/java/tests
 
 ## Website Tested
 
