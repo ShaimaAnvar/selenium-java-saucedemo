@@ -9,6 +9,7 @@ public class CartPage {
     WebDriver driver;
 
     By backpackItem = By.xpath("//div[text()='Sauce Labs Backpack']");
+    By checkoutButton = By.id("checkout");
 
     public CartPage(WebDriver driver) {
         this.driver = driver;
@@ -16,5 +17,8 @@ public class CartPage {
 
     public boolean isBackpackDisplayed() {
         return driver.findElement(backpackItem).isDisplayed(); //find backpack item and return whether displayed or not.
+    }
+    public void clickCheckout(){
+        driver.findElement(checkoutButton).click();
     }
 }
